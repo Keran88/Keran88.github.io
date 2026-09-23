@@ -7,7 +7,18 @@
 
     <title>Research | Kiran Illyass</title>
 
-    <link rel="stylesheet" href="/style.css?v=3">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Leaflet Map -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
 
     <style>
 
@@ -30,7 +41,6 @@
             padding: 13px 15px;
             background: #f8fafc;
             border-bottom: 2px solid #e2e8f0;
-
             color: #0f172a;
             font-size: 13px;
             font-weight: 600;
@@ -40,7 +50,6 @@
         .research-table td {
             padding: 17px 15px;
             border-bottom: 1px solid #e2e8f0;
-
             color: #475569;
             font-size: 14px;
             line-height: 1.55;
@@ -72,15 +81,47 @@
             white-space: nowrap;
         }
 
+
+        /* ---------- COLLABORATION MAP ---------- */
+
+        #collaboration-map {
+            width: 100%;
+            height: 430px;
+            margin-top: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .leaflet-popup-content {
+            font-family: inherit;
+            color: #334155;
+            line-height: 1.5;
+        }
+
+        .leaflet-popup-content strong {
+            color: #0f172a;
+        }
+
+
+        /* ---------- MOBILE ---------- */
+
         @media (max-width: 700px) {
+
             .research-table {
                 min-width: 700px;
             }
+
+            #collaboration-map {
+                height: 350px;
+            }
+
         }
 
     </style>
 
 </head>
+
 
 <body>
 
@@ -98,11 +139,13 @@
         <a href="teaching.html">Teaching</a>
         <a href="experience.html">Industry Experience</a>
         <a href="certifications.html">Certifications</a>
-
+        <a href="cv.html">CV</a>
     </nav>
 
 </div>
 
+
+<!-- MAIN CONTENT -->
 
 <main class="content">
 
@@ -146,20 +189,25 @@
             authentication protocols.
         </p>
 
+
         <div class="research-table-container">
 
             <table class="research-table">
 
                 <thead>
+
                     <tr>
                         <th>Research Area</th>
                         <th>Focus</th>
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
                     <tr>
+
                         <td class="research-title">
                             Secure Authentication for Drone Swarm Networks
                         </td>
@@ -169,10 +217,12 @@
                             mechanisms for secure drone-to-drone communication
                             in autonomous swarm environments.
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td class="research-title">
                             Continuous Authentication for Drone Swarm Networks
                         </td>
@@ -182,10 +232,12 @@
                             for maintaining trust between communicating drones
                             beyond initial authentication.
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td class="research-title">
                             AI-based Risk Modelling for Drone Swarm Networks
                         </td>
@@ -195,6 +247,7 @@
                             to support adaptive authentication decisions in
                             autonomous distributed systems.
                         </td>
+
                     </tr>
 
                 </tbody>
@@ -217,15 +270,19 @@
             <table class="research-table">
 
                 <thead>
+
                     <tr>
                         <th>Research Area</th>
                         <th>Focus</th>
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
                     <tr>
+
                         <td class="research-title">
                             Dynamic Multi-objective Optimisation
                         </td>
@@ -235,6 +292,7 @@
                             annealing and opposition-based learning for dynamic
                             multi-objective problems.
                         </td>
+
                     </tr>
 
                 </tbody>
@@ -246,7 +304,7 @@
     </section>
 
 
-    <!-- GRANTS AND SCHOLARSHIPS -->
+    <!-- RESEARCH GRANTS AND SCHOLARSHIPS -->
 
     <section>
 
@@ -257,16 +315,20 @@
             <table class="research-table">
 
                 <thead>
+
                     <tr>
                         <th>Award</th>
                         <th>Institution</th>
                         <th>Details</th>
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
                     <tr>
+
                         <td class="research-title">
                             Deakin University Postgraduate Research Scholarship
                         </td>
@@ -279,10 +341,12 @@
                             Competitive research scholarship supporting
                             PhD study.
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td class="research-title">
                             Merit Scholarship
                         </td>
@@ -294,6 +358,7 @@
                         <td class="research-description">
                             Awarded on academic merit.
                         </td>
+
                     </tr>
 
                 </tbody>
@@ -305,7 +370,7 @@
     </section>
 
 
-    <!-- ACADEMIC SERVICE -->
+    <!-- ACADEMIC SERVICE AND REVIEWING -->
 
     <section>
 
@@ -316,16 +381,20 @@
             <table class="research-table">
 
                 <thead>
+
                     <tr>
                         <th>Role</th>
                         <th>Venue</th>
                         <th>Year</th>
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
                     <tr>
+
                         <td class="research-title">
                             Technical Sub-reviewer
                         </td>
@@ -337,10 +406,12 @@
                         <td class="research-year">
                             2026
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td class="research-title">
                             Sub-reviewer
                         </td>
@@ -353,10 +424,12 @@
                         <td class="research-year">
                             2026
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td class="research-title">
                             Reviewer
                         </td>
@@ -368,10 +441,12 @@
                         <td class="research-year">
                             2026
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td class="research-title">
                             Reviewer
                         </td>
@@ -383,6 +458,7 @@
                         <td class="research-year">
                             2026
                         </td>
+
                     </tr>
 
                 </tbody>
@@ -394,7 +470,75 @@
     </section>
 
 
+    <!-- RESEARCH COLLABORATIONS -->
+
+    <section>
+
+        <h2>Research Collaborations</h2>
+
+        <p>
+            International research collaborations and academic connections.
+        </p>
+
+        <div id="collaboration-map"></div>
+
+    </section>
+
+
 </main>
+
+
+<!-- COLLABORATION MAP SCRIPT -->
+
+<script>
+
+    const map = L.map('collaboration-map', {
+        scrollWheelZoom: false
+    }).setView([20, 20], 2);
+
+
+    L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+            attribution: '&copy; OpenStreetMap contributors'
+        }
+    ).addTo(map);
+
+
+    /* Deakin University */
+
+    L.marker([-37.8474, 145.1149])
+        .addTo(map)
+        .bindPopup(
+            '<strong>Deakin University</strong><br>' +
+            'Burwood, Australia<br>' +
+            'Research Collaboration'
+        );
+
+
+    /* University of Kentucky */
+
+    L.marker([38.0307, -84.5037])
+        .addTo(map)
+        .bindPopup(
+            '<strong>University of Kentucky</strong><br>' +
+            'Kentucky, USA<br>' +
+            'Research Collaboration'
+        );
+
+
+    /* KTH Royal Institute of Technology */
+
+    L.marker([59.3498, 18.0686])
+        .addTo(map)
+        .bindPopup(
+            '<strong>KTH Royal Institute of Technology</strong><br>' +
+            'Stockholm, Sweden<br>' +
+            'Research Collaboration'
+        );
+
+</script>
+
 
 </body>
 

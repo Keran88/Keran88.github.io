@@ -1,170 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publications | Kiran Illyass</title>
+
+    <link rel="stylesheet" href="/style.css?v=3">
+
+    <style>
+        .publication-table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 25px;
+        }
+
+        .publication-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .publication-table th {
+            background: #f1f5f9;
+            color: #0f172a;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            padding: 14px 16px;
+            border-bottom: 2px solid #cbd5e1;
+        }
+
+        .publication-table td {
+            padding: 17px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+
+        .publication-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .publication-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .publication-table .year {
+            width: 75px;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .publication-title {
+            color: #0f172a;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .publication-author {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        .publication-venue {
+            font-style: italic;
+        }
+
+        .under-review {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #fff7ed;
+            border-radius: 12px;
+            color: #9a3412;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 700px) {
+            .publication-table {
+                min-width: 700px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="name">Kiran Illyass</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="experience.html">Experience</a>
+        <a href="cv.html">CV</a>
+    </nav>
+
+</div>
+
+
 <main class="content">
 
     <h1>Publications</h1>
 
-    <section class="publications-section">
+    <div class="publication-table-container">
 
-        <div class="year-group">
+        <table class="publication-table">
 
-            <h2>2026</h2>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Publication</th>
+                    <th>Venue</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
 
-            <article class="pub-entry">
-                <div class="pub-number">1</div>
+            <tbody>
 
-                <div class="pub-content">
-                    <h3>
-                        Continuous Authentication Protocol for Drone Swarm Networks
-                    </h3>
+                <tr>
+                    <td class="year">2026</td>
 
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
+                    <td>
+                        <div class="publication-title">
+                            Continuous Authentication Protocol for Drone Swarm Networks
+                        </div>
 
-                    <p class="pub-venue">
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
+
+                    <td class="publication-venue">
                         IEEE Communications Magazine
-                        <span class="pub-status">Under Review</span>
-                    </p>
-                </div>
-            </article>
+                    </td>
+
+                    <td>
+                        <span class="under-review">Under Review</span>
+                    </td>
+                </tr>
 
 
-            <article class="pub-entry">
-                <div class="pub-number">2</div>
+                <tr>
+                    <td class="year">2026</td>
 
-                <div class="pub-content">
-                    <h3>
-                        AI-based Risk Estimator for Drone Swarm Networks
-                    </h3>
+                    <td>
+                        <div class="publication-title">
+                            AI-based Risk Estimator for Drone Swarm Networks
+                        </div>
 
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
 
-                    <p class="pub-venue">
+                    <td class="publication-venue">
                         IEEE Consumer Magazine
-                    </p>
-                </div>
-            </article>
+                    </td>
 
-        </div>
+                    <td>Published</td>
+                </tr>
 
 
-        <div class="year-group">
+                <tr>
+                    <td class="year">2025</td>
 
-            <h2>2025</h2>
+                    <td>
+                        <div class="publication-title">
+                            Robust and Lightweight Mutual Authentication Scheme
+                            for Drone Swarm Networks
+                        </div>
 
-            <article class="pub-entry">
-                <div class="pub-number">3</div>
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
 
-                <div class="pub-content">
-                    <h3>
-                        Robust and Lightweight Mutual Authentication Scheme
-                        for Drone Swarm Networks
-                    </h3>
-
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
-
-                    <p class="pub-venue">
+                    <td class="publication-venue">
                         Journal of Network and Computer Applications, Elsevier
-                    </p>
-                </div>
-            </article>
+                    </td>
 
-        </div>
+                    <td>Published</td>
+                </tr>
 
 
-        <div class="year-group">
+                <tr>
+                    <td class="year">2023</td>
 
-            <h2>2023</h2>
+                    <td>
+                        <div class="publication-title">
+                            Enhancing Dynamic Multi-objective Optimization Using
+                            Opposition Based Learning and Simulated Annealing
+                        </div>
 
-            <article class="pub-entry">
-                <div class="pub-number">4</div>
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
 
-                <div class="pub-content">
-                    <h3>
-                        Enhancing Dynamic Multi-objective Optimization Using
-                        Opposition Based Learning and Simulated Annealing
-                    </h3>
-
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
-
-                    <p class="pub-venue">
+                    <td class="publication-venue">
                         International Journal on Artificial Intelligence Tools
-                    </p>
-                </div>
-            </article>
+                    </td>
 
-        </div>
+                    <td>Published</td>
+                </tr>
 
 
-        <div class="year-group">
+                <tr>
+                    <td class="year">2021</td>
 
-            <h2>2021</h2>
+                    <td>
+                        <div class="publication-title">
+                            A Survey on the Use of Computational Intelligence
+                            Techniques in Software Engineering
+                        </div>
 
-            <article class="pub-entry">
-                <div class="pub-number">5</div>
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
 
-                <div class="pub-content">
-                    <h3>
-                        A Survey on the Use of Computational Intelligence
-                        Techniques in Software Engineering
-                    </h3>
-
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
-
-                    <p class="pub-venue">
+                    <td class="publication-venue">
                         IEEE Conference Proceedings
-                    </p>
-                </div>
-            </article>
+                    </td>
+
+                    <td>Published</td>
+                </tr>
 
 
-            <article class="pub-entry">
-                <div class="pub-number">6</div>
+                <tr>
+                    <td class="year">2021</td>
 
-                <div class="pub-content">
-                    <h3>
-                        Wireless Sensor Networks: Security, Threats, and Solutions
-                    </h3>
+                    <td>
+                        <div class="publication-title">
+                            Wireless Sensor Networks: Security, Threats, and Solutions
+                        </div>
 
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
 
-                    <p class="pub-venue">
+                    <td class="publication-venue">
                         IEEE Conference Proceedings
-                    </p>
-                </div>
-            </article>
+                    </td>
+
+                    <td>Published</td>
+                </tr>
 
 
-            <article class="pub-entry">
-                <div class="pub-number">7</div>
+                <tr>
+                    <td class="year">2021</td>
 
-                <div class="pub-content">
-                    <h3>
-                        COVID-19: Future Preference of University Students
-                        to Promote Online Education in Pakistan
-                    </h3>
+                    <td>
+                        <div class="publication-title">
+                            COVID-19: Future Preference of University Students
+                            to Promote Online Education in Pakistan
+                        </div>
 
-                    <p class="pub-authors">
-                        <strong>Kiran Illyass</strong>
-                    </p>
+                        <div class="publication-author">
+                            Kiran Illyass
+                        </div>
+                    </td>
 
-                    <p class="pub-venue">
+                    <td class="publication-venue">
                         IEEE Conference Proceedings
-                    </p>
-                </div>
-            </article>
+                    </td>
 
-        </div>
+                    <td>Published</td>
+                </tr>
 
-    </section>
+            </tbody>
+
+        </table>
+
+    </div>
 
 </main>
+
+</body>
+</html>

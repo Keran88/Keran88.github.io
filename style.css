@@ -545,3 +545,48 @@ ol li {
     }
 
 }
+
+
+
+
+
+
+/* vertical scroll*/
+/* Vertical News Ticker */
+
+.vertical-news {
+    height: 55px;
+    overflow: hidden;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.vertical-news-items {
+    animation: verticalNews 8s infinite;
+}
+
+.news-item {
+    height: 55px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    color: #334155;
+    font-size: 14px;
+}
+
+@keyframes verticalNews {
+    0%, 40% {
+        transform: translateY(0);
+    }
+
+    50%, 90% {
+        transform: translateY(-55px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

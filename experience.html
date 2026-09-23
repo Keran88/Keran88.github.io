@@ -4,11 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience | Kiran Illyass</title>
-    <link rel="stylesheet" href="/style.css?v=3">
+
+    <title>Industry Experience | Kiran Illyass</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+
+        /* ---------- EXPERIENCE TABLE ---------- */
+
+        .experience-table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .experience-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .experience-table th {
+            padding: 13px 15px;
+            background: #f8fafc;
+            border-bottom: 2px solid #e2e8f0;
+            color: #0f172a;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .experience-table td {
+            padding: 17px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.55;
+            vertical-align: top;
+        }
+
+        .experience-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .experience-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .experience-period {
+            width: 145px;
+            color: #64748b;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .experience-role {
+            min-width: 160px;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .experience-organisation {
+            min-width: 170px;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .experience-responsibilities {
+            min-width: 320px;
+        }
+
+
+        /* ---------- MEMBERSHIP TABLE ---------- */
+
+        .membership-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            margin-top: 20px;
+        }
+
+        .membership-table th {
+            padding: 13px 15px;
+            background: #f8fafc;
+            border-bottom: 2px solid #e2e8f0;
+            color: #0f172a;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .membership-table td {
+            padding: 17px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #475569;
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+        .membership-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .membership-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .membership-name {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 800px) {
+
+            .experience-table {
+                min-width: 800px;
+            }
+
+            .membership-table {
+                min-width: 550px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
+
 <body>
+
+
+<!-- SIDEBAR -->
 
 <div class="sidebar">
 
@@ -27,123 +160,150 @@
 </div>
 
 
+<!-- MAIN CONTENT -->
+
 <main class="content">
 
     <h1>Industry Experience</h1>
 
+
+    <!-- INDUSTRY EXPERIENCE -->
+
     <section>
 
+        <div class="experience-table-container">
 
-        <div class="research-item">
+            <table class="experience-table">
 
-            <h3>Cyber and GRC Intern</h3>
+                <thead>
 
-            <p>
-                <strong>Cyber and GRC Pty Ltd, Melbourne</strong><br>
-                December 2025 - April 2026
-            </p>
+                    <tr>
+                        <th>Period</th>
+                        <th>Role</th>
+                        <th>Organisation</th>
+                        <th>Responsibilities</th>
+                    </tr>
 
-            <p>
-                Contributed to an APRA CPS 230-aligned Business Continuity
-                Management implementation, supporting GRC, technology risk,
-                gap assessment, workflow validation testing, and implementation
-                documentation.
-            </p>
-
-        </div>
+                </thead>
 
 
-        <div class="research-item">
+                <tbody>
 
-            <h3>SOC Analyst</h3>
+                    <tr>
 
-            <p>
-                <strong>Epodium, Melbourne</strong><br>
-                April 2026 - June 2026
-            </p>
+                        <td class="experience-period">
+                            Dec 2025 - Apr 2026
+                        </td>
 
-            <p>
-                Monitored and triaged security events in Wazuh SIEM,
-                reviewed related log activity, documented findings, and
-                escalated events requiring further investigation.
-            </p>
+                        <td class="experience-role">
+                            Cyber and GRC Intern
+                        </td>
+
+                        <td class="experience-organisation">
+                            Cyber and GRC Pty Ltd<br>
+                            Melbourne
+                        </td>
+
+                        <td class="experience-responsibilities">
+                            Contributed to an APRA CPS 230-aligned Business
+                            Continuity Management implementation, supporting
+                            GRC, technology risk, gap assessment, workflow
+                            validation testing and implementation documentation.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="experience-period">
+                            Apr 2026 - Jun 2026
+                        </td>
+
+                        <td class="experience-role">
+                            SOC Analyst
+                        </td>
+
+                        <td class="experience-organisation">
+                            Epodium<br>
+                            Melbourne
+                        </td>
+
+                        <td class="experience-responsibilities">
+                            Monitored and triaged security events in Wazuh SIEM,
+                            reviewed related log activity, documented findings
+                            and escalated events requiring further investigation.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
 
         </div>
 
     </section>
 
 
-    <section>
-
-        <h2>Professional Activities</h2>
-
-        <div class="research-item">
-
-            <h3>Technical Sub-reviewer</h3>
-
-            <p>
-                31st Australasian Conference on Information Security
-                and Privacy (ACISP 2026)<br>
-                January-February & April 2026
-            </p>
-
-        </div>
-
-
-        <div class="research-item">
-
-            <h3>Reviewer</h3>
-
-            <p>
-                <em>Internet Histories</em>, Routledge / Taylor & Francis<br>
-                April 2026
-            </p>
-
-        </div>
-
-
-        <div class="research-item">
-
-            <h3>Sub-Reviewer</h3>
-
-            <p>
-                IEEE GLOBECOM 2026 CISS<br>
-                Communication and Information System Security<br>
-                June 2026
-            </p>
-
-        </div>
-
-
-        <div class="research-item">
-
-            <h3>Reviewer</h3>
-
-            <p>
-                EAI MobiQuitous 2026<br>
-                July 2026
-            </p>
-
-        </div>
-
-    </section>
-
+    <!-- PROFESSIONAL MEMBERSHIPS -->
 
     <section>
 
         <h2>Professional Memberships</h2>
 
-        <p>
-            <strong>Australian Computer Society (ACS)</strong> | Member
-        </p>
+        <div class="experience-table-container">
 
-        <p>
-            <strong>Australian Information Security Association (AISA)</strong> | Member
-        </p>
+            <table class="membership-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Organisation</th>
+                        <th>Membership</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td class="membership-name">
+                            Australian Computer Society (ACS)
+                        </td>
+
+                        <td>
+                            Member
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="membership-name">
+                            Australian Information Security Association (AISA)
+                        </td>
+
+                        <td>
+                            Member
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
 
     </section>
+
 
 </main>
 
 </body>
+
 </html>

@@ -8,9 +8,101 @@
     <title>Teaching | Kiran Illyass</title>
 
     <link rel="stylesheet" href="/style.css?v=3">
+
+    <style>
+
+        /* ---------- TEACHING TABLE ---------- */
+
+        .teaching-table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .teaching-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .teaching-table th {
+            padding: 13px 15px;
+
+            background: #f8fafc;
+            border-bottom: 2px solid #e2e8f0;
+
+            color: #0f172a;
+
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .teaching-table td {
+            padding: 17px 15px;
+
+            border-bottom: 1px solid #e2e8f0;
+
+            color: #475569;
+
+            font-size: 14px;
+            line-height: 1.55;
+
+            vertical-align: top;
+        }
+
+        .teaching-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .teaching-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .teaching-period {
+            width: 145px;
+
+            color: #64748b;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .teaching-position {
+            min-width: 190px;
+
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .teaching-institution {
+            min-width: 180px;
+
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .teaching-focus {
+            min-width: 260px;
+        }
+
+        @media (max-width: 800px) {
+
+            .teaching-table {
+                min-width: 850px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
+
 <body>
+
+
+<!-- SIDEBAR -->
 
 <div class="sidebar">
 
@@ -28,6 +120,8 @@
 </div>
 
 
+<!-- MAIN CONTENT -->
+
 <main class="content">
 
     <h1>Teaching</h1>
@@ -39,123 +133,230 @@
 
         <h2>Academic Appointments</h2>
 
-        <div class="research-item">
-            <h3>Casual Information Technology Lecturer</h3>
-            <p>
-                <strong>Victorian Institute of Technology</strong> |
-                September 2026 - Present
-            </p>
-        </div>
+        <div class="teaching-table-container">
+
+            <table class="teaching-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Period</th>
+                        <th>Position</th>
+                        <th>Institution</th>
+                        <th>Teaching &amp; Responsibilities</th>
+                    </tr>
+
+                </thead>
 
 
-        <div class="research-item">
-            <h3>Teaching Fellow Level A</h3>
-
-            <p>
-                <strong>Deakin University</strong> |
-                February 2026 - October 2026
-            </p>
-
-            <p>
-                Cybersecurity workshops covering authentication, cryptography,
-                malware analysis, network traffic analysis and troubleshooting.
-            </p>
-        </div>
+                <tbody>
 
 
-        <div class="research-item">
-            <h3>Teaching Fellow Level A, School of IT</h3>
+                    <tr>
 
-            <p>
-                <strong>Deakin University</strong> |
-                July 2025 - October 2025
-            </p>
+                        <td class="teaching-period">
+                            Sep 2026 - Present
+                        </td>
 
-            <p>
-                Seminars and practical workshops in software-defined networking,
-                secure communication protocols, packet analysis and
-                Linux/network troubleshooting.
-            </p>
-        </div>
+                        <td class="teaching-position">
+                            Casual Information Technology Lecturer
+                        </td>
 
+                        <td class="teaching-institution">
+                            Victorian Institute of Technology
+                        </td>
 
-        <div class="research-item">
-            <h3>Course Content Author, Emerging Cyber Threats &amp; AI</h3>
+                        <td class="teaching-focus">
+                            Information Technology teaching.
+                        </td>
 
-            <p>
-                <strong>Deakin University</strong> |
-                February 2025 - June 2025
-            </p>
-
-            <p>
-                Developed content and assessed learning activities for the
-                Emerging Cyber Threats and AI microcredential.
-            </p>
-        </div>
+                    </tr>
 
 
-        <div class="research-item">
-            <h3>Casual Sessional Academic, Information Technology</h3>
+                    <tr>
 
-            <p>
-                <strong>Deakin University</strong> |
-                July 2023 - January 2025
-            </p>
+                        <td class="teaching-period">
+                            Feb 2026 - Oct 2026
+                        </td>
 
-            <p>
-                Teaching in network security, cybersecurity analytics,
-                Python and machine learning applications for cybersecurity.
-            </p>
-        </div>
+                        <td class="teaching-position">
+                            Teaching Fellow Level A
+                        </td>
 
+                        <td class="teaching-institution">
+                            Deakin University
+                        </td>
 
-        <div class="research-item">
-            <h3>Lecturer, Software Engineering</h3>
+                        <td class="teaching-focus">
+                            Cybersecurity workshops covering authentication,
+                            cryptography, malware analysis, network traffic
+                            analysis and troubleshooting.
+                        </td>
 
-            <p>
-                <strong>University of Management and Technology</strong> |
-                December 2019 - April 2023
-            </p>
-
-            <p>
-                Taught Programming Fundamentals and ICT, coordinated units,
-                designed assessments and supervised undergraduate
-                capstone projects.
-            </p>
-        </div>
+                    </tr>
 
 
-        <div class="research-item">
-            <h3>Lecturer, Software Engineering</h3>
+                    <tr>
 
-            <p>
-                <strong>University of Lahore</strong> |
-                January 2019 - January 2020
-            </p>
+                        <td class="teaching-period">
+                            Jul 2025 - Oct 2025
+                        </td>
 
-            <p>
-                Taught Data Structures, Design Patterns and Object-Oriented
-                Programming, with undergraduate research and
-                capstone supervision.
-            </p>
-        </div>
+                        <td class="teaching-position">
+                            Teaching Fellow Level A, School of IT
+                        </td>
 
+                        <td class="teaching-institution">
+                            Deakin University
+                        </td>
 
-        <div class="research-item">
-            <h3>Lab Instructor, C++ Programming</h3>
+                        <td class="teaching-focus">
+                            Software-defined networking, secure communication
+                            protocols, packet analysis and Linux/network
+                            troubleshooting.
+                        </td>
 
-            <p>
-                <strong>FAST NUCES</strong> | Fall 2018
-            </p>
-        </div>
+                    </tr>
 
 
-        <div class="research-item">
-            <h3>Teaching Assistant, Computer Architecture</h3>
+                    <tr>
 
-            <p>
-                <strong>FAST NUCES</strong> | Spring 2018
-            </p>
+                        <td class="teaching-period">
+                            Feb 2025 - Jun 2025
+                        </td>
+
+                        <td class="teaching-position">
+                            Course Content Author
+                        </td>
+
+                        <td class="teaching-institution">
+                            Deakin University
+                        </td>
+
+                        <td class="teaching-focus">
+                            Developed content and assessed learning activities
+                            for the Emerging Cyber Threats &amp; AI
+                            microcredential.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="teaching-period">
+                            Jul 2023 - Jan 2025
+                        </td>
+
+                        <td class="teaching-position">
+                            Casual Sessional Academic, Information Technology
+                        </td>
+
+                        <td class="teaching-institution">
+                            Deakin University
+                        </td>
+
+                        <td class="teaching-focus">
+                            Network security, cybersecurity analytics,
+                            Python and machine learning applications
+                            for cybersecurity.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="teaching-period">
+                            Dec 2019 - Apr 2023
+                        </td>
+
+                        <td class="teaching-position">
+                            Lecturer, Software Engineering
+                        </td>
+
+                        <td class="teaching-institution">
+                            University of Management and Technology
+                        </td>
+
+                        <td class="teaching-focus">
+                            Programming Fundamentals and ICT, unit coordination,
+                            assessment design and undergraduate capstone
+                            supervision.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="teaching-period">
+                            Jan 2019 - Jan 2020
+                        </td>
+
+                        <td class="teaching-position">
+                            Lecturer, Software Engineering
+                        </td>
+
+                        <td class="teaching-institution">
+                            University of Lahore
+                        </td>
+
+                        <td class="teaching-focus">
+                            Data Structures, Design Patterns,
+                            Object-Oriented Programming and undergraduate
+                            research and capstone supervision.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="teaching-period">
+                            Fall 2018
+                        </td>
+
+                        <td class="teaching-position">
+                            Lab Instructor, C++ Programming
+                        </td>
+
+                        <td class="teaching-institution">
+                            FAST NUCES
+                        </td>
+
+                        <td class="teaching-focus">
+                            C++ programming laboratory instruction.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="teaching-period">
+                            Spring 2018
+                        </td>
+
+                        <td class="teaching-position">
+                            Teaching Assistant, Computer Architecture
+                        </td>
+
+                        <td class="teaching-institution">
+                            FAST NUCES
+                        </td>
+
+                        <td class="teaching-focus">
+                            Computer Architecture teaching support.
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
         </div>
 
     </section>
@@ -168,6 +369,7 @@
         <h2>Teaching Areas</h2>
 
         <div class="interests">
+
             <span>Cybersecurity</span>
             <span>Authentication</span>
             <span>Cryptography</span>
@@ -183,6 +385,7 @@
             <span>Design Patterns</span>
             <span>Machine Learning</span>
             <span>Computer Architecture</span>
+
         </div>
 
     </section>
@@ -208,6 +411,7 @@
         </div>
 
     </section>
+
 
 </main>
 
